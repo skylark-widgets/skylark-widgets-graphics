@@ -18,7 +18,7 @@ define([
 	 * @param {String} name Name of the default graph.
 	 * @param {String} color CSS hex color code of the default graph.
 	 */
-	var NumberBox = Widget.inherit({
+	var Graph = Widget.inherit({
 
 		_construct : function (parent, name, color) {
 			Widget.prototype._construct.call(this, parent, "div");

@@ -5,5 +5,5 @@
  * @link https://github.com/skylark-widgets/skylark-widgets-graphics/
  * @license MIT
  */
-define(["./graphics","./Graph","./ImagePane"],function(e){return e});
+define(["./graphics","./Graph"],function(n){return n});
 //# sourceMappingURL=sourcemaps/main.js.map

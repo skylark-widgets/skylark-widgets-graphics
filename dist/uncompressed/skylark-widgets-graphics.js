@@ -116,7 +116,7 @@ define('skylark-widgets-graphics/Graph',[
 	 * @param {String} name Name of the default graph.
 	 * @param {String} color CSS hex color code of the default graph.
 	 */
-	var NumberBox = Widget.inherit({
+	var Graph = Widget.inherit({
 
 		_construct : function (parent, name, color) {
 			Widget.prototype._construct.call(this, parent, "div");
@@ -571,46 +571,9 @@ define('skylark-widgets-graphics/Graph',[
 
 	return graphics.Graph = Graph;
 });
-define('skylark-widgets-graphics/ImagePane',[
-	"skylark-widgets-base/Widget",
-	"./graphics"
-],function(Widget,graphics){
-	"use strict";
-
-	/**
-	 * image widget.
-	 * 
-	 * @class ImagePane
-	 * @extends {Widget}
-	 * @param {Widget} parent Parent widget.
-	 */
-	var ImagePane = Widget.inherit({
-
-		_construct : function (parent) {
-			Widget.prototype._construct.call(this, parent, "img");
-
-			this._elm.style.borderStyle = "none";
-			this._elm.style.objectFit = "contain"; //cover | fill
-		},
-
-
-		/**
-		 * Set image from URL.
-		 * 
-		 * @method setImage
-		 * @param {String} source Image URL.
-		 */
-		setImage : function(source) {
-			this._elm.src = source;
-		}
-	});
-
-	return graphics.ImagePane = ImagePane;
-});
 define('skylark-widgets-graphics/main',[
 	"./graphics",
-	"./Graph",
-	"./ImagePane"
+	"./Graph"
 ],function(graphics){
 	return graphics;
 });

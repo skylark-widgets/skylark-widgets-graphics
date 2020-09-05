@@ -1,7 +1,6 @@
 define([
 	"./graphics",
-	"./Graph",
-	"./ImagePane"
+	"./Graph"
 ],function(graphics){
 	return graphics;
 });
