@@ -11,7 +11,7 @@
   "author": "Hudaokeji, Inc.",
   "license": "MIT",
   "scripts": {
-    "build": "sbundle build ."
+    "build": "slib build ."
   },
   "repository": {
     "type": "git",
