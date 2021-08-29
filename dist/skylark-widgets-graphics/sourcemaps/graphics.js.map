@@ -1,1 +1,0 @@
-{"version":3,"sources":["graphics.js"],"names":["define","skylark","attach"],"mappings":";;;;;;;AAAAA,QACC,yBACC,SAASC,GAGV,OAAOA,EAAQC,OAAO","file":"../graphics.js","sourcesContent":["define([\r\n\t\"skylark-langx/skylark\"\r\n],function(skylark) {\r\n\tvar graphics = {};\r\n\r\n\treturn skylark.attach(\"widgets.graphics\",graphics);\r\n\r\n});\r\n\r\n"]}
